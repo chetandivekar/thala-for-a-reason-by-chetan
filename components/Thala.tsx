@@ -121,7 +121,7 @@ const Thala = () => {
           <div className="text-left text-[64px]">Thala Hall of Fame</div>
           <div className="text-[32px] text-left mt-3 font-salsa text-darkslateblue">
             Write the best 7-letter word so you will be forever enshrined in the
-            hallowed halls of Thala greatness.
+            hallowed halls of Thala greatness
           </div>
           <div>
             <form action="">
