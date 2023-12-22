@@ -1,20 +1,30 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        darkslateblue: "#163f89",
+        white: "#fff",
+        gainsboro: "rgba(217, 217, 217, 0)",
+      },
+      spacing: {},
+      fontFamily: {
+        salsa: "Salsa",
+        "luckiest-guy": "'Luckiest Guy'",
+        inherit: "inherit",
       },
     },
+    fontSize: {
+      "13xl": "32px",
+      "45xl": "64px",
+      inherit: "inherit",
+    },
   },
-  plugins: [],
-}
-export default config
+  corePlugins: {
+    preflight: false,
+  },
+};
